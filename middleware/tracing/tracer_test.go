@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/go-kratos/kratos/v2/internal/testdata/binding"
+	"github.com/go-warrior/pkg/v2/internal/testdata/binding"
 	"go.opentelemetry.io/otel/trace"
 )
 

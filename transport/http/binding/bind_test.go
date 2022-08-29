@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-kratos/kratos/v2/errors"
+	"github.com/go-warrior/pkg/v2/errors"
 )
 
 func TestBindQuery(t *testing.T) {

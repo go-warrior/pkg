@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/config"
+	"github.com/go-warrior/pkg/v2/config"
 	"github.com/hashicorp/consul/api"
 )
 

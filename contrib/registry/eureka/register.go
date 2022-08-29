@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/registry"
+	"github.com/go-warrior/pkg/v2/registry"
 )
 
 var (

@@ -1,4 +1,4 @@
-module github.com/go-warrior/pkg
+module github.com/go-warrior/pkg/v2
 
 go 1.16
 

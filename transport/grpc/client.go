@@ -6,16 +6,16 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/middleware"
-	"github.com/go-kratos/kratos/v2/registry"
-	"github.com/go-kratos/kratos/v2/selector"
-	"github.com/go-kratos/kratos/v2/selector/p2c"
-	"github.com/go-kratos/kratos/v2/transport"
-	"github.com/go-kratos/kratos/v2/transport/grpc/resolver/discovery"
+	"github.com/go-warrior/pkg/v2/log"
+	"github.com/go-warrior/pkg/v2/middleware"
+	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/v2/selector"
+	"github.com/go-warrior/pkg/v2/selector/p2c"
+	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/v2/transport/grpc/resolver/discovery"
 
 	// init resolver
-	_ "github.com/go-kratos/kratos/v2/transport/grpc/resolver/direct"
+	_ "github.com/go-warrior/pkg/v2/transport/grpc/resolver/direct"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"

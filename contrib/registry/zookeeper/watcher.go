@@ -6,7 +6,7 @@ import (
 	"path"
 	"sync/atomic"
 
-	"github.com/go-kratos/kratos/v2/registry"
+	"github.com/go-warrior/pkg/v2/registry"
 	"github.com/go-zookeeper/zk"
 )
 

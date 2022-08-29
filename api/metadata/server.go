@@ -9,7 +9,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/go-kratos/kratos/v2/log"
+	"github.com/go-warrior/pkg/v2/log"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

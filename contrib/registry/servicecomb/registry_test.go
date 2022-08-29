@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	pb "github.com/go-chassis/cari/discovery"
-	"github.com/go-kratos/kratos/v2/registry"
+	"github.com/go-warrior/pkg/v2/registry"
 	"github.com/gofrs/uuid"
 	"github.com/stretchr/testify/assert"
 )

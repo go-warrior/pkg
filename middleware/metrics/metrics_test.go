@@ -5,9 +5,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/go-kratos/kratos/v2/metrics"
-	"github.com/go-kratos/kratos/v2/transport"
-	"github.com/go-kratos/kratos/v2/transport/http"
+	"github.com/go-warrior/pkg/v2/metrics"
+	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/v2/transport/http"
 )
 
 type (

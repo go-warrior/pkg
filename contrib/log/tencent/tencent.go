@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	log "github.com/go-kratos/kratos/v2/log"
+	log "github.com/go-warrior/pkg/v2/log"
 	cls "github.com/tencentcloud/tencentcloud-cls-sdk-go"
 	"google.golang.org/protobuf/proto"
 )

@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-kratos/kratos/v2/internal/testdata/binding"
-	"github.com/go-kratos/kratos/v2/metadata"
-	"github.com/go-kratos/kratos/v2/transport"
+	"github.com/go-warrior/pkg/v2/internal/testdata/binding"
+	"github.com/go-warrior/pkg/v2/metadata"
+	"github.com/go-warrior/pkg/v2/transport"
 	"go.opentelemetry.io/otel/attribute"
 	semconv "go.opentelemetry.io/otel/semconv/v1.4.0"
 	"go.opentelemetry.io/otel/trace"

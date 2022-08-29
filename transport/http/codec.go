@@ -5,9 +5,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/go-kratos/kratos/v2/encoding"
-	"github.com/go-kratos/kratos/v2/errors"
-	"github.com/go-kratos/kratos/v2/internal/httputil"
+	"github.com/go-warrior/pkg/v2/encoding"
+	"github.com/go-warrior/pkg/v2/errors"
+	"github.com/go-warrior/pkg/v2/internal/httputil"
 )
 
 // SupportPackageIsVersion1 These constants should not be referenced from any other code.
