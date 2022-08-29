@@ -38,8 +38,8 @@ func DisableDebugLog() Option {
 }
 
 type builder struct {
-	discoverer       registry.Discovery
-	timeout          time.Duration
+	discoverer registry.Discovery
+	timeout    time.Duration
 	insecure         bool
 	debugLogDisabled bool
 }

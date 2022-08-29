@@ -78,12 +78,12 @@ type Complex struct {
 
 	// Id represents the message identifier.
 	Id        int64                   `protobuf:"varint,1,opt,name=id,proto3" json:"id,omitempty"`
-	NoOne     string                  `protobuf:"bytes,2,opt,name=no_one,json=numberOne,proto3" json:"no_one,omitempty"`
-	Simple    *Simple                 `protobuf:"bytes,3,opt,name=simple,json=very_simple,proto3" json:"simple,omitempty"`
-	Simples   []string                `protobuf:"bytes,4,rep,name=simples,proto3" json:"simples,omitempty"`
-	B         bool                    `protobuf:"varint,5,opt,name=b,proto3" json:"b,omitempty"`
-	Sex       Sex                     `protobuf:"varint,6,opt,name=sex,proto3,enum=testproto.Sex" json:"sex,omitempty"`
-	Age       int32                   `protobuf:"varint,7,opt,name=age,proto3" json:"age,omitempty"`
+	NoOne   string   `protobuf:"bytes,2,opt,name=no_one,json=numberOne,proto3" json:"no_one,omitempty"`
+	Simple  *Simple  `protobuf:"bytes,3,opt,name=simple,json=very_simple,proto3" json:"simple,omitempty"`
+	Simples []string `protobuf:"bytes,4,rep,name=simples,proto3" json:"simples,omitempty"`
+	B       bool     `protobuf:"varint,5,opt,name=b,proto3" json:"b,omitempty"`
+	Sex     Sex      `protobuf:"varint,6,opt,name=sex,proto3,enum=testproto.Sex" json:"sex,omitempty"`
+	Age     int32    `protobuf:"varint,7,opt,name=age,proto3" json:"age,omitempty"`
 	A         uint32                  `protobuf:"varint,8,opt,name=a,proto3" json:"a,omitempty"`
 	Count     uint64                  `protobuf:"varint,9,opt,name=count,proto3" json:"count,omitempty"`
 	Price     float32                 `protobuf:"fixed32,10,opt,name=price,proto3" json:"price,omitempty"`

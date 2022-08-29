@@ -9,8 +9,6 @@ import (
 	"reflect"
 	"strings"
 	"testing"
-
-	"github.com/polarismesh/polaris-go"
 )
 
 var (

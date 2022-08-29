@@ -1,8 +1,6 @@
 package servicecomb
 
 import (
-	"github.com/go-chassis/sc-client"
-
 	"github.com/go-kratos/kratos/v2/registry"
 	"golang.org/x/net/context"
 )

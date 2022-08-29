@@ -34,8 +34,8 @@ func TestMetadata_Inject(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			a := kratos.New(kratos.Name(tt.args.appName))
-			ctx := kratos.NewContext(context.Background(), a)
+			a := pkg.New(pkg.Name(tt.args.appName))
+			ctx := pkg.NewContext(context.Background(), a)
 			m := new(Metadata)
 			m.Inject(ctx, tt.args.carrier)
 			if res := tt.args.carrier.Get(serviceHeader); tt.want != res {

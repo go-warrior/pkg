@@ -31,8 +31,8 @@ type Builder struct {
 
 	prefix []string
 	regex  []string
-	path   []string
-	match  MatchFunc
+	path  []string
+	match MatchFunc
 
 	ms []middleware.Middleware
 }

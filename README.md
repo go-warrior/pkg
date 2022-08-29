@@ -102,7 +102,7 @@ Thank you for considering contributing to the Kratos framework! The contribution
 
 ## License
 
-The Kratos framework is open-sourced software licensed under the [MIT license](./LICENSE).
+The Kratos framework is open-sourced software licensed under the [MIT license](LICENSE).
   
 ## Acknowledgments
   

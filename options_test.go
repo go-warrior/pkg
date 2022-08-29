@@ -1,4 +1,4 @@
-package kratos
+package pkg
 
 import (
 	"context"

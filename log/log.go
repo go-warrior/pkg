@@ -14,8 +14,8 @@ type Logger interface {
 }
 
 type logger struct {
-	logger    Logger
-	prefix    []interface{}
+	logger Logger
+	prefix []interface{}
 	hasValuer bool
 	ctx       context.Context
 }

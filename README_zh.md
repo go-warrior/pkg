@@ -146,4 +146,4 @@ app.Run()
 ![kratos](docs/images/alipay.png)
 
 ## License
-Kratos is MIT licensed. See the [LICENSE](./LICENSE) file for details.
+Kratos is MIT licensed. See the [LICENSE](LICENSE) file for details.

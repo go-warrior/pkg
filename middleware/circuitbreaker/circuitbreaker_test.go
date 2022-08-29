@@ -11,8 +11,8 @@ import (
 )
 
 type transportMock struct {
-	kind      transport.Kind
-	endpoint  string
+	kind     transport.Kind
+	endpoint string
 	operation string
 }
 

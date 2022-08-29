@@ -14,8 +14,8 @@ import (
 var _ transport.Transporter = &Transport{}
 
 type Transport struct {
-	kind      transport.Kind
-	endpoint  string
+	kind     transport.Kind
+	endpoint string
 	operation string
 }
 
