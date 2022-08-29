@@ -4,7 +4,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/registry"
 )
 
 type serviceSet struct {

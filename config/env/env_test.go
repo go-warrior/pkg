@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/config"
-	"github.com/go-warrior/pkg/v2/config/file"
+	"github.com/go-warrior/pkg/config"
+	"github.com/go-warrior/pkg/config/file"
 )
 
 const _testJSON = `

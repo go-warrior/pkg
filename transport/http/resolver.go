@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/internal/endpoint"
-	"github.com/go-warrior/pkg/v2/log"
-	"github.com/go-warrior/pkg/v2/registry"
-	"github.com/go-warrior/pkg/v2/selector"
+	"github.com/go-warrior/pkg/internal/endpoint"
+	"github.com/go-warrior/pkg/log"
+	"github.com/go-warrior/pkg/registry"
+	"github.com/go-warrior/pkg/selector"
 )
 
 // Target is resolver target

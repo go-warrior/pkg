@@ -8,7 +8,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/registry"
 	clientv3 "go.etcd.io/etcd/client/v3"
 )
 

@@ -5,10 +5,10 @@ import (
 
 	"github.com/go-kratos/aegis/circuitbreaker"
 	"github.com/go-kratos/aegis/circuitbreaker/sre"
-	"github.com/go-warrior/pkg/v2/errors"
-	"github.com/go-warrior/pkg/v2/internal/group"
-	"github.com/go-warrior/pkg/v2/middleware"
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/internal/group"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
 )
 
 // ErrNotAllowed is request failed due to circuit breaker triggered.

@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"reflect"
 
-	"github.com/go-warrior/pkg/v2/encoding"
+	"github.com/go-warrior/pkg/encoding"
 
 	"github.com/go-playground/form/v4"
 	"google.golang.org/protobuf/proto"

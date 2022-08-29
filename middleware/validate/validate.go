@@ -3,8 +3,8 @@ package validate
 import (
 	"context"
 
-	"github.com/go-warrior/pkg/v2/errors"
-	"github.com/go-warrior/pkg/v2/middleware"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/middleware"
 )
 
 type validator interface {

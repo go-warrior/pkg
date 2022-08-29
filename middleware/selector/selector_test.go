@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/middleware"
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
 )
 
 var _ transport.Transporter = &Transport{}

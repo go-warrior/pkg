@@ -9,8 +9,8 @@ import (
 	"github.com/go-chassis/cari/discovery"
 	pb "github.com/go-chassis/cari/discovery"
 	"github.com/go-chassis/cari/pkg/errsvc"
-	"github.com/go-warrior/pkg/v2/log"
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/log"
+	"github.com/go-warrior/pkg/registry"
 	"github.com/gofrs/uuid"
 )
 

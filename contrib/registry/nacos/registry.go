@@ -11,7 +11,7 @@ import (
 	"github.com/nacos-group/nacos-sdk-go/common/constant"
 	"github.com/nacos-group/nacos-sdk-go/vo"
 
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/registry"
 )
 
 var (

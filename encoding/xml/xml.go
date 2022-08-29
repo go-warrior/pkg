@@ -3,7 +3,7 @@ package xml
 import (
 	"encoding/xml"
 
-	"github.com/go-warrior/pkg/v2/encoding"
+	"github.com/go-warrior/pkg/encoding"
 )
 
 // Name is the name registered for the xml codec.

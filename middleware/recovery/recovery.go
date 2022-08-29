@@ -4,9 +4,9 @@ import (
 	"context"
 	"runtime"
 
-	"github.com/go-warrior/pkg/v2/errors"
-	"github.com/go-warrior/pkg/v2/log"
-	"github.com/go-warrior/pkg/v2/middleware"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/log"
+	"github.com/go-warrior/pkg/middleware"
 )
 
 // ErrUnknownRequest is unknown request error.

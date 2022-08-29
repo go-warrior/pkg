@@ -3,7 +3,7 @@ package selector
 import (
 	"strconv"
 
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/registry"
 )
 
 // DefaultNode is selector node

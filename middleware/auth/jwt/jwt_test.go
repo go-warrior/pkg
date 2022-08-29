@@ -14,8 +14,8 @@ import (
 
 	"github.com/golang-jwt/jwt/v4"
 
-	"github.com/go-warrior/pkg/v2/middleware"
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
 )
 
 type headerCarrier http.Header

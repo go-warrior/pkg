@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	testData "github.com/go-warrior/pkg/v2/internal/testdata/encoding"
+	testData "github.com/go-warrior/pkg/internal/testdata/encoding"
 )
 
 type testEmbed struct {

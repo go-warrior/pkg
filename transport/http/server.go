@@ -9,13 +9,13 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/internal/endpoint"
-	"github.com/go-warrior/pkg/v2/internal/matcher"
+	"github.com/go-warrior/pkg/internal/endpoint"
+	"github.com/go-warrior/pkg/internal/matcher"
 
-	"github.com/go-warrior/pkg/v2/internal/host"
-	"github.com/go-warrior/pkg/v2/log"
-	"github.com/go-warrior/pkg/v2/middleware"
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/internal/host"
+	"github.com/go-warrior/pkg/log"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
 
 	"github.com/gorilla/mux"
 )

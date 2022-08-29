@@ -9,15 +9,15 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/encoding"
-	"github.com/go-warrior/pkg/v2/errors"
-	"github.com/go-warrior/pkg/v2/internal/host"
-	"github.com/go-warrior/pkg/v2/internal/httputil"
-	"github.com/go-warrior/pkg/v2/middleware"
-	"github.com/go-warrior/pkg/v2/registry"
-	"github.com/go-warrior/pkg/v2/selector"
-	"github.com/go-warrior/pkg/v2/selector/p2c"
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/encoding"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/internal/host"
+	"github.com/go-warrior/pkg/internal/httputil"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/registry"
+	"github.com/go-warrior/pkg/selector"
+	"github.com/go-warrior/pkg/selector/p2c"
+	"github.com/go-warrior/pkg/transport"
 )
 
 func init() {

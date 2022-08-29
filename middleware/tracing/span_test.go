@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/internal/testdata/binding"
-	"github.com/go-warrior/pkg/v2/metadata"
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/internal/testdata/binding"
+	"github.com/go-warrior/pkg/metadata"
+	"github.com/go-warrior/pkg/transport"
 	"go.opentelemetry.io/otel/attribute"
 	semconv "go.opentelemetry.io/otel/semconv/v1.4.0"
 	"go.opentelemetry.io/otel/trace"

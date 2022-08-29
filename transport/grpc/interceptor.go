@@ -3,9 +3,9 @@ package grpc
 import (
 	"context"
 
-	ic "github.com/go-warrior/pkg/v2/internal/context"
-	"github.com/go-warrior/pkg/v2/middleware"
-	"github.com/go-warrior/pkg/v2/transport"
+	ic "github.com/go-warrior/pkg/internal/context"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
 	"google.golang.org/grpc"
 	grpcmd "google.golang.org/grpc/metadata"
 )

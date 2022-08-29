@@ -1,8 +1,8 @@
 package grpc
 
 import (
-	"github.com/go-warrior/pkg/v2/selector"
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/selector"
+	"github.com/go-warrior/pkg/transport"
 	"google.golang.org/grpc/metadata"
 )
 

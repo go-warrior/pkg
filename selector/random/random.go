@@ -4,8 +4,8 @@ import (
 	"context"
 	"math/rand"
 
-	"github.com/go-warrior/pkg/v2/selector"
-	"github.com/go-warrior/pkg/v2/selector/node/direct"
+	"github.com/go-warrior/pkg/selector"
+	"github.com/go-warrior/pkg/selector/node/direct"
 )
 
 const (

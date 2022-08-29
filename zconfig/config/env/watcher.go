@@ -1,7 +1,7 @@
 package env
 
 import (
-	"github.com/go-warrior/pkg/v2/zconfig/config"
+	"github.com/go-warrior/pkg/zconfig/config"
 )
 
 type watcher struct {

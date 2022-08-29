@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 
 	"github.com/fsnotify/fsnotify"
-	"github.com/go-warrior/pkg/v2/config"
+	"github.com/go-warrior/pkg/config"
 )
 
 type watcher struct {

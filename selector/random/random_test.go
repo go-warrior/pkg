@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/registry"
-	"github.com/go-warrior/pkg/v2/selector"
-	"github.com/go-warrior/pkg/v2/selector/filter"
+	"github.com/go-warrior/pkg/registry"
+	"github.com/go-warrior/pkg/selector"
+	"github.com/go-warrior/pkg/selector/filter"
 )
 
 func TestWrr(t *testing.T) {

@@ -4,10 +4,10 @@ import (
 	"context"
 	"strings"
 
-	"github.com/go-warrior/pkg/v2/encoding"
+	"github.com/go-warrior/pkg/encoding"
 
-	"github.com/go-warrior/pkg/v2/config"
-	"github.com/go-warrior/pkg/v2/log"
+	"github.com/go-warrior/pkg/config"
+	"github.com/go-warrior/pkg/log"
 
 	"github.com/apolloconfig/agollo/v4/storage"
 )

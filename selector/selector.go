@@ -3,7 +3,7 @@ package selector
 import (
 	"context"
 
-	"github.com/go-warrior/pkg/v2/errors"
+	"github.com/go-warrior/pkg/errors"
 )
 
 // ErrNoAvailable is no available node.

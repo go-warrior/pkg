@@ -3,7 +3,7 @@ package filter
 import (
 	"context"
 
-	"github.com/go-warrior/pkg/v2/selector"
+	"github.com/go-warrior/pkg/selector"
 )
 
 // Version is version filter.

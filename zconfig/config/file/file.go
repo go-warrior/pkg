@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/go-warrior/pkg/v2/zconfig/config"
+	"github.com/go-warrior/pkg/zconfig/config"
 )
 
 var _ config.Source = (*file)(nil)

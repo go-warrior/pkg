@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/transport"
 )
 
 var _ Transporter = &Transport{}

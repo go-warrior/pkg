@@ -1,9 +1,9 @@
 package grpc
 
 import (
-	"github.com/go-warrior/pkg/v2/registry"
-	"github.com/go-warrior/pkg/v2/selector"
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/registry"
+	"github.com/go-warrior/pkg/selector"
+	"github.com/go-warrior/pkg/transport"
 
 	"google.golang.org/grpc/balancer"
 	"google.golang.org/grpc/balancer/base"

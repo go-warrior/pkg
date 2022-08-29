@@ -5,7 +5,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/selector"
+	"github.com/go-warrior/pkg/selector"
 )
 
 const (

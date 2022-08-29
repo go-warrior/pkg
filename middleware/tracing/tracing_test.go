@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/log"
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/log"
+	"github.com/go-warrior/pkg/transport"
 	"go.opentelemetry.io/otel/propagation"
 	tracesdk "go.opentelemetry.io/otel/sdk/trace"
 	"go.opentelemetry.io/otel/trace"

@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/log"
+	"github.com/go-warrior/pkg/log"
 )
 
 func TestMain(m *testing.M) {

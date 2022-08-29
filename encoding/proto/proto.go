@@ -3,7 +3,7 @@
 package proto
 
 import (
-	"github.com/go-warrior/pkg/v2/encoding"
+	"github.com/go-warrior/pkg/encoding"
 
 	"google.golang.org/protobuf/proto"
 )

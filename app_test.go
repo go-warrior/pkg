@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/registry"
-	"github.com/go-warrior/pkg/v2/transport/grpc"
-	"github.com/go-warrior/pkg/v2/transport/http"
+	"github.com/go-warrior/pkg/registry"
+	"github.com/go-warrior/pkg/transport/grpc"
+	"github.com/go-warrior/pkg/transport/http"
 )
 
 type mockRegistry struct {

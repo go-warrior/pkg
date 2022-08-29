@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/errors"
-	"github.com/go-warrior/pkg/v2/log"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/log"
 )
 
 func TestOnce(t *testing.T) {

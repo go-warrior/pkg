@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/go-warrior/pkg/v2/encoding"
-	"github.com/go-warrior/pkg/v2/log"
+	"github.com/go-warrior/pkg/encoding"
+	"github.com/go-warrior/pkg/log"
 )
 
 // Decoder is config decoder.

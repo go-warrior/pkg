@@ -7,7 +7,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/registry"
 
 	"github.com/hashicorp/consul/api"
 )

@@ -3,7 +3,7 @@ package eureka
 import (
 	"context"
 
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/registry"
 )
 
 var _ registry.Watcher = &watcher{}

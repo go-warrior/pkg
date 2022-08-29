@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/go-warrior/pkg/v2/encoding"
-	"github.com/go-warrior/pkg/v2/errors"
-	"github.com/go-warrior/pkg/v2/internal/httputil"
+	"github.com/go-warrior/pkg/encoding"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/internal/httputil"
 )
 
 type response struct {

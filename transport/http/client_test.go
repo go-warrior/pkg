@@ -15,10 +15,10 @@ import (
 	"testing"
 	"time"
 
-	kratosErrors "github.com/go-warrior/pkg/v2/errors"
-	"github.com/go-warrior/pkg/v2/middleware"
-	"github.com/go-warrior/pkg/v2/registry"
-	"github.com/go-warrior/pkg/v2/selector"
+	kratosErrors "github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/registry"
+	"github.com/go-warrior/pkg/selector"
 )
 
 type mockRoundTripper struct{}

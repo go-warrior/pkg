@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/errors"
+	"github.com/go-warrior/pkg/errors"
 )
 
 func TestDefaultRequestDecoder(t *testing.T) {

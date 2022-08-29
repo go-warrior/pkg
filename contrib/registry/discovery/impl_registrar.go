@@ -9,8 +9,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/go-warrior/pkg/v2/log"
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/log"
+	"github.com/go-warrior/pkg/registry"
 )
 
 func (d *Discovery) Register(ctx context.Context, service *registry.ServiceInstance) (err error) {

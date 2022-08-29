@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/zconfig/config"
-	"github.com/go-warrior/pkg/v2/zconfig/config/file"
+	"github.com/go-warrior/pkg/zconfig/config"
+	"github.com/go-warrior/pkg/zconfig/config/file"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/registry"
 
 	"github.com/polarismesh/polaris-go/pkg/config"
 )

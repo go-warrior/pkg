@@ -8,7 +8,7 @@ import (
 	"github.com/go-zookeeper/zk"
 	"golang.org/x/sync/singleflight"
 
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/registry"
 )
 
 var (

@@ -1,7 +1,7 @@
 package logrus
 
 import (
-	"github.com/go-warrior/pkg/v2/log"
+	"github.com/go-warrior/pkg/log"
 	"github.com/sirupsen/logrus"
 )
 

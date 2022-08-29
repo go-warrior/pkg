@@ -3,7 +3,7 @@ package zap
 import (
 	"fmt"
 
-	"github.com/go-warrior/pkg/v2/log"
+	"github.com/go-warrior/pkg/log"
 	"go.uber.org/zap"
 )
 

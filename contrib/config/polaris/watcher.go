@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/go-warrior/pkg/v2/config"
-	"github.com/go-warrior/pkg/v2/log"
+	"github.com/go-warrior/pkg/config"
+	"github.com/go-warrior/pkg/log"
 
 	"github.com/polarismesh/polaris-go/pkg/model"
 )

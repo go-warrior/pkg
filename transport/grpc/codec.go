@@ -3,8 +3,8 @@ package grpc
 import (
 	"fmt"
 
-	enc "github.com/go-warrior/pkg/v2/encoding"
-	"github.com/go-warrior/pkg/v2/encoding/json"
+	enc "github.com/go-warrior/pkg/encoding"
+	"github.com/go-warrior/pkg/encoding/json"
 	"google.golang.org/grpc/encoding"
 	"google.golang.org/protobuf/proto"
 )

@@ -1,7 +1,7 @@
 package msgpack
 
 import (
-	"github.com/go-warrior/pkg/v2/encoding"
+	"github.com/go-warrior/pkg/encoding"
 )
 
 // Name is the name registered for the msgpack compressor.

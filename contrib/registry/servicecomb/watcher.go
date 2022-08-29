@@ -1,7 +1,7 @@
 package servicecomb
 
 import (
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/registry"
 	"golang.org/x/net/context"
 )
 

@@ -3,7 +3,7 @@ package etcd
 import (
 	"context"
 
-	"github.com/go-warrior/pkg/v2/config"
+	"github.com/go-warrior/pkg/config"
 	clientv3 "go.etcd.io/etcd/client/v3"
 )
 

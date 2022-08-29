@@ -4,7 +4,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/go-warrior/pkg/v2/config"
+	"github.com/go-warrior/pkg/config"
 )
 
 type env struct {

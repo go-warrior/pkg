@@ -1,7 +1,7 @@
 package datadog
 
 import (
-	"github.com/go-warrior/pkg/v2/metrics"
+	"github.com/go-warrior/pkg/metrics"
 )
 
 var _ metrics.Counter = (*counter)(nil)

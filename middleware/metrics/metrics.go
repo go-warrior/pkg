@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/errors"
-	"github.com/go-warrior/pkg/v2/metrics"
-	"github.com/go-warrior/pkg/v2/middleware"
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/metrics"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
 )
 
 // Option is metrics option.

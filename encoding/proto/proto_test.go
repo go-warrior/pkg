@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	testData "github.com/go-warrior/pkg/v2/internal/testdata/encoding"
+	testData "github.com/go-warrior/pkg/internal/testdata/encoding"
 )
 
 func TestName(t *testing.T) {

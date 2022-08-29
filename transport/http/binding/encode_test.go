@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/internal/testdata/binding"
+	"github.com/go-warrior/pkg/internal/testdata/binding"
 	"google.golang.org/protobuf/types/known/fieldmaskpb"
 )
 

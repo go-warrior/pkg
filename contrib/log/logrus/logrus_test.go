@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/log"
+	"github.com/go-warrior/pkg/log"
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 )

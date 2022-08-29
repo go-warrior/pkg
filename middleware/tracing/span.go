@@ -6,9 +6,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/go-warrior/pkg/v2/metadata"
-	"github.com/go-warrior/pkg/v2/transport"
-	"github.com/go-warrior/pkg/v2/transport/http"
+	"github.com/go-warrior/pkg/metadata"
+	"github.com/go-warrior/pkg/transport"
+	"github.com/go-warrior/pkg/transport/http"
 
 	"go.opentelemetry.io/otel/attribute"
 	semconv "go.opentelemetry.io/otel/semconv/v1.4.0"

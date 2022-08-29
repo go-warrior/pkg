@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/encoding"
+	"github.com/go-warrior/pkg/encoding"
 )
 
 func TestReader_Merge(t *testing.T) {

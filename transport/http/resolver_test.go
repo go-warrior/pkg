@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/registry"
-	"github.com/go-warrior/pkg/v2/selector"
+	"github.com/go-warrior/pkg/registry"
+	"github.com/go-warrior/pkg/selector"
 )
 
 func TestParseTarget(t *testing.T) {

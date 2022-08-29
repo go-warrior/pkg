@@ -1,11 +1,10 @@
-module github.com/go-warrior/pkg/v2
+module github.com/go-warrior/pkg
 
 go 1.16
 
 require (
 	github.com/aliyun/aliyun-log-go-sdk v0.1.37
 	github.com/fsnotify/fsnotify v1.5.4
-	github.com/go-kirito/pkg v0.0.29
 	github.com/go-kratos/aegis v0.1.2
 	github.com/go-playground/form/v4 v4.2.0
 	github.com/golang-jwt/jwt/v4 v4.4.2

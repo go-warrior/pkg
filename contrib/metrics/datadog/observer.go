@@ -3,7 +3,7 @@ package datadog
 import (
 	"time"
 
-	"github.com/go-warrior/pkg/v2/metrics"
+	"github.com/go-warrior/pkg/metrics"
 )
 
 var _ metrics.Observer = (*timing)(nil)

@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/zconfig/config"
+	"github.com/go-warrior/pkg/zconfig/config"
 	"github.com/stretchr/testify/assert"
 )
 

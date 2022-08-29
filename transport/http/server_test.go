@@ -13,9 +13,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/errors"
+	"github.com/go-warrior/pkg/errors"
 
-	"github.com/go-warrior/pkg/v2/internal/host"
+	"github.com/go-warrior/pkg/internal/host"
 )
 
 var h = func(w http.ResponseWriter, r *http.Request) {

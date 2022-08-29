@@ -1,7 +1,7 @@
 package prometheus
 
 import (
-	"github.com/go-warrior/pkg/v2/metrics"
+	"github.com/go-warrior/pkg/metrics"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

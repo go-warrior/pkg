@@ -3,7 +3,7 @@ package env
 import (
 	"context"
 
-	"github.com/go-warrior/pkg/v2/config"
+	"github.com/go-warrior/pkg/config"
 )
 
 type watcher struct {

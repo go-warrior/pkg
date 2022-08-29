@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/registry"
+	"github.com/go-warrior/pkg/registry"
 )
 
 func TestRegistry(t *testing.T) {

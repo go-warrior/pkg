@@ -11,11 +11,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/errors"
-	"github.com/go-warrior/pkg/v2/internal/matcher"
-	pb "github.com/go-warrior/pkg/v2/internal/testdata/helloworld"
-	"github.com/go-warrior/pkg/v2/middleware"
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/internal/matcher"
+	pb "github.com/go-warrior/pkg/internal/testdata/helloworld"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
 	"google.golang.org/grpc"
 )
 

@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/internal/testdata/binding"
+	"github.com/go-warrior/pkg/internal/testdata/binding"
 	"go.opentelemetry.io/otel/trace"
 )
 

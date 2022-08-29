@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/log"
+	"github.com/go-warrior/pkg/log"
 	"github.com/stretchr/testify/assert"
 )
 

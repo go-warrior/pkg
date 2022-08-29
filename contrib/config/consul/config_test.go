@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-warrior/pkg/v2/config"
+	"github.com/go-warrior/pkg/config"
 	"github.com/hashicorp/consul/api"
 )
 

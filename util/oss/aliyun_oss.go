@@ -9,7 +9,7 @@ import (
 	"errors"
 
 	"github.com/aliyun/alibaba-cloud-sdk-go/services/sts"
-	"github.com/go-warrior/pkg/v2/zconfig"
+	"github.com/go-warrior/pkg/zconfig"
 )
 
 type OssConfig struct {

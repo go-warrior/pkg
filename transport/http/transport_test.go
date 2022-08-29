@@ -7,7 +7,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/go-warrior/pkg/v2/transport"
+	"github.com/go-warrior/pkg/transport"
 )
 
 func TestTransport_Kind(t *testing.T) {

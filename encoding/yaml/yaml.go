@@ -1,7 +1,7 @@
 package yaml
 
 import (
-	"github.com/go-warrior/pkg/v2/encoding"
+	"github.com/go-warrior/pkg/encoding"
 	"gopkg.in/yaml.v3"
 )
 

@@ -4,7 +4,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/go-warrior/pkg/v2/middleware"
+	"github.com/go-warrior/pkg/middleware"
 )
 
 // Matcher is a middleware matcher.

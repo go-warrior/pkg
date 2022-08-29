@@ -7,7 +7,7 @@ import (
 
 	sls "github.com/aliyun/aliyun-log-go-sdk"
 	"github.com/aliyun/aliyun-log-go-sdk/producer"
-	log "github.com/go-warrior/pkg/v2/log"
+	log "github.com/go-warrior/pkg/log"
 	"google.golang.org/protobuf/proto"
 )
 

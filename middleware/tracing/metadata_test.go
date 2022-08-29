@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/go-warrior/pkg/v2"
-	"github.com/go-warrior/pkg/v2/metadata"
+	"github.com/go-warrior/pkg/metadata"
 
 	"go.opentelemetry.io/otel/propagation"
 )

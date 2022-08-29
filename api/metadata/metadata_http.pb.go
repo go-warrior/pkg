@@ -6,8 +6,8 @@ package metadata
 
 import (
 	context "context"
-	http "github.com/go-warrior/pkg/v2/transport/http"
-	binding "github.com/go-warrior/pkg/v2/transport/http/binding"
+	http "github.com/go-warrior/pkg/transport/http"
+	binding "github.com/go-warrior/pkg/transport/http/binding"
 )
 
 // This is a compile-time assertion to ensure that this generated file
