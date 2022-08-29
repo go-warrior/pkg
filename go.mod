@@ -3,16 +3,21 @@ module github.com/go-warrior/pkg
 go 1.16
 
 require (
+	github.com/aliyun/alibaba-cloud-sdk-go v1.61.1743
 	github.com/aliyun/aliyun-log-go-sdk v0.1.37
+	github.com/bwmarrin/snowflake v0.3.0
 	github.com/fsnotify/fsnotify v1.5.4
 	github.com/go-kratos/aegis v0.1.2
 	github.com/go-playground/form/v4 v4.2.0
+	github.com/go-warrior/pkg/v2 v2.0.0-20220829190559-638e5b6e0c2e
 	github.com/golang-jwt/jwt/v4 v4.4.2
 	github.com/google/uuid v1.3.0
 	github.com/gorilla/mux v1.8.0
 	github.com/imdario/mergo v0.3.12
 	github.com/json-iterator/go v1.1.12
 	github.com/natefinch/lumberjack v2.0.0+incompatible
+	github.com/spf13/viper v1.12.0
+	github.com/stretchr/testify v1.8.0
 	go.opentelemetry.io/otel v1.7.0
 	go.opentelemetry.io/otel/sdk v1.7.0
 	go.opentelemetry.io/otel/trace v1.7.0
