@@ -33,8 +33,7 @@ type Builder struct {
 	regex  []string
 	path   []string
 	match  MatchFunc
-
-	ms []middleware.Middleware
+	ms     []middleware.Middleware
 }
 
 // Server selector middleware
