@@ -5,11 +5,13 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/go-kirito/pkg/metadata"
+
 	"github.com/golang-jwt/jwt/v4"
 
-	"github.com/go-warrior/pkg/errors"
-	"github.com/go-warrior/pkg/middleware"
-	"github.com/go-warrior/pkg/transport"
+	"github.com/go-kirito/pkg/errors"
+	"github.com/go-kirito/pkg/middleware"
+	"github.com/go-kirito/pkg/transport"
 )
 
 type authKey struct{}
@@ -22,24 +24,21 @@ const (
 	// bearerFormat authorization token format
 	bearerFormat string = "Bearer %s"
 
-	// authorizationKey holds the key used to store the JWT Token in the request tokenHeader.
+	// authorizationKey holds the key used to store the JWT Token in the request header.
 	authorizationKey string = "Authorization"
-
-	// reason holds the error reason.
-	reason string = "UNAUTHORIZED"
 )
 
 var (
-	ErrMissingJwtToken        = errors.Unauthorized(reason, "JWT token is missing")
-	ErrMissingKeyFunc         = errors.Unauthorized(reason, "keyFunc is missing")
-	ErrTokenInvalid           = errors.Unauthorized(reason, "Token is invalid")
-	ErrTokenExpired           = errors.Unauthorized(reason, "JWT token has expired")
-	ErrTokenParseFail         = errors.Unauthorized(reason, "Fail to parse JWT token ")
-	ErrUnSupportSigningMethod = errors.Unauthorized(reason, "Wrong signing method")
-	ErrWrongContext           = errors.Unauthorized(reason, "Wrong context for middleware")
-	ErrNeedTokenProvider      = errors.Unauthorized(reason, "Token provider is missing")
-	ErrSignToken              = errors.Unauthorized(reason, "Can not sign token.Is the key correct?")
-	ErrGetKey                 = errors.Unauthorized(reason, "Can not get key while signing token")
+	ErrMissingJwtToken        = errors.Unauthorized("UNAUTHORIZED", "JWT token is missing")
+	ErrMissingKeyFunc         = errors.Unauthorized("UNAUTHORIZED", "keyFunc is missing")
+	ErrTokenInvalid           = errors.Unauthorized("UNAUTHORIZED", "Token is invalid")
+	ErrTokenExpired           = errors.Unauthorized("UNAUTHORIZED", "JWT token has expired")
+	ErrTokenParseFail         = errors.Unauthorized("UNAUTHORIZED", "Fail to parse JWT token ")
+	ErrUnSupportSigningMethod = errors.Unauthorized("UNAUTHORIZED", "Wrong signing method")
+	ErrWrongContext           = errors.Unauthorized("UNAUTHORIZED", "Wrong context for middleware")
+	ErrNeedTokenProvider      = errors.Unauthorized("UNAUTHORIZED", "Token provider is missing")
+	ErrSignToken              = errors.Unauthorized("UNAUTHORIZED", "Can not sign token.Is the key correct?")
+	ErrGetKey                 = errors.Unauthorized("UNAUTHORIZED", "Can not get key while signing token")
 )
 
 // Option is jwt option.
@@ -48,8 +47,7 @@ type Option func(*options)
 // Parser is a jwt parser
 type options struct {
 	signingMethod jwt.SigningMethod
-	claims        func() jwt.Claims
-	tokenHeader   map[string]interface{}
+	claims        jwt.Claims
 }
 
 // WithSigningMethod with signing method option.
@@ -60,18 +58,9 @@ func WithSigningMethod(method jwt.SigningMethod) Option {
 }
 
 // WithClaims with customer claim
-// If you use it in Server, f needs to return a new jwt.Claims object each time to avoid concurrent write problems
-// If you use it in Client, f only needs to return a single object to provide performance
-func WithClaims(f func() jwt.Claims) Option {
+func WithClaims(claims jwt.Claims) Option {
 	return func(o *options) {
-		o.claims = f
-	}
-}
-
-// WithTokenHeader withe customer tokenHeader for client side
-func WithTokenHeader(header map[string]interface{}) Option {
-	return func(o *options) {
-		o.tokenHeader = header
+		o.claims = claims
 	}
 }
 
@@ -79,6 +68,7 @@ func WithTokenHeader(header map[string]interface{}) Option {
 func Server(keyFunc jwt.Keyfunc, opts ...Option) middleware.Middleware {
 	o := &options{
 		signingMethod: jwt.SigningMethodHS256,
+		claims:        jwt.RegisteredClaims{},
 	}
 	for _, opt := range opts {
 		opt(o)
@@ -94,35 +84,37 @@ func Server(keyFunc jwt.Keyfunc, opts ...Option) middleware.Middleware {
 					return nil, ErrMissingJwtToken
 				}
 				jwtToken := auths[1]
-				var (
-					tokenInfo *jwt.Token
-					err       error
-				)
-				if o.claims != nil {
-					tokenInfo, err = jwt.ParseWithClaims(jwtToken, o.claims(), keyFunc)
-				} else {
-					tokenInfo, err = jwt.Parse(jwtToken, keyFunc)
-				}
+				parser := jwt.NewParser(jwt.WithJSONNumber())
+				tokenInfo, err := parser.Parse(jwtToken, keyFunc)
 				if err != nil {
-					ve, ok := err.(*jwt.ValidationError)
-					if !ok {
-						return nil, errors.Unauthorized(reason, err.Error())
+					if ve, ok := err.(*jwt.ValidationError); ok {
+						if ve.Errors&jwt.ValidationErrorMalformed != 0 {
+							return nil, ErrTokenInvalid
+						} else if ve.Errors&(jwt.ValidationErrorExpired|jwt.ValidationErrorNotValidYet) != 0 {
+							return nil, ErrTokenExpired
+						} else {
+							return nil, ErrTokenParseFail
+						}
 					}
-					if ve.Errors&jwt.ValidationErrorMalformed != 0 {
-						return nil, ErrTokenInvalid
-					}
-					if ve.Errors&(jwt.ValidationErrorExpired|jwt.ValidationErrorNotValidYet) != 0 {
-						return nil, ErrTokenExpired
-					}
-					return nil, ErrTokenParseFail
-				}
-				if !tokenInfo.Valid {
+					return nil, errors.Unauthorized("UNAUTHORIZED", err.Error())
+				} else if !tokenInfo.Valid {
 					return nil, ErrTokenInvalid
-				}
-				if tokenInfo.Method != o.signingMethod {
+				} else if tokenInfo.Method != o.signingMethod {
 					return nil, ErrUnSupportSigningMethod
 				}
-				ctx = NewContext(ctx, tokenInfo.Claims)
+
+				if md, ok := metadata.FromServerContext(ctx); ok {
+					for k, v := range tokenInfo.Claims.(jwt.MapClaims) {
+						if vv, ok := v.(string); ok {
+							md.Set(k, vv)
+						}
+					}
+
+					ctx = metadata.NewServerContext(ctx, md)
+				} else {
+					ctx = NewContext(ctx, tokenInfo.Claims)
+				}
+
 				return handler(ctx, req)
 			}
 			return nil, ErrWrongContext
@@ -132,10 +124,9 @@ func Server(keyFunc jwt.Keyfunc, opts ...Option) middleware.Middleware {
 
 // Client is a client jwt middleware.
 func Client(keyProvider jwt.Keyfunc, opts ...Option) middleware.Middleware {
-	claims := jwt.RegisteredClaims{}
 	o := &options{
 		signingMethod: jwt.SigningMethodHS256,
-		claims:        func() jwt.Claims { return claims },
+		claims:        jwt.StandardClaims{},
 	}
 	for _, opt := range opts {
 		opt(o)
@@ -145,12 +136,7 @@ func Client(keyProvider jwt.Keyfunc, opts ...Option) middleware.Middleware {
 			if keyProvider == nil {
 				return nil, ErrNeedTokenProvider
 			}
-			token := jwt.NewWithClaims(o.signingMethod, o.claims())
-			if o.tokenHeader != nil {
-				for k, v := range o.tokenHeader {
-					token.Header[k] = v
-				}
-			}
+			token := jwt.NewWithClaims(o.signingMethod, o.claims)
 			key, err := keyProvider(token)
 			if err != nil {
 				return nil, ErrGetKey

@@ -5,13 +5,13 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/go-warrior/pkg/middleware"
-	"github.com/go-warrior/pkg/transport"
+	"github.com/go-kirito/pkg/middleware"
+	"github.com/go-kirito/pkg/transport"
 )
 
 type (
 	transporter func(ctx context.Context) (transport.Transporter, bool)
-	MatchFunc   func(ctx context.Context, operation string) bool
+	MatchFunc   func(operation string) bool
 )
 
 var (
@@ -31,8 +31,8 @@ type Builder struct {
 
 	prefix []string
 	regex  []string
-	path  []string
-	match MatchFunc
+	path   []string
+	match  MatchFunc
 
 	ms []middleware.Middleware
 }
@@ -79,17 +79,11 @@ func (b *Builder) Build() middleware.Middleware {
 	} else {
 		transporter = serverTransporter
 	}
-	return selector(transporter, b.matches, b.ms...)
+	return selector(transporter, b.matchs, b.ms...)
 }
 
-// matches is match operation compliance Builder
-func (b *Builder) matches(ctx context.Context, transporter transporter) bool {
-	info, ok := transporter(ctx)
-	if !ok {
-		return false
-	}
-
-	operation := info.Operation()
+// matchs is match operation compliance Builder
+func (b *Builder) matchs(operation string) bool {
 	for _, prefix := range b.prefix {
 		if prefixMatch(prefix, operation) {
 			return true
@@ -107,19 +101,21 @@ func (b *Builder) matches(ctx context.Context, transporter transporter) bool {
 	}
 
 	if b.match != nil {
-		if b.match(ctx, operation) {
-			return true
-		}
+		return b.match(operation)
 	}
-
 	return false
 }
 
 // selector middleware
-func selector(transporter transporter, match func(context.Context, transporter) bool, ms ...middleware.Middleware) middleware.Middleware {
+func selector(transporter transporter, match MatchFunc, ms ...middleware.Middleware) middleware.Middleware {
 	return func(handler middleware.Handler) middleware.Handler {
 		return func(ctx context.Context, req interface{}) (reply interface{}, err error) {
-			if !match(ctx, transporter) {
+			info, ok := transporter(ctx)
+			if !ok {
+				return handler(ctx, req)
+			}
+
+			if !match(info.Operation()) {
 				return handler(ctx, req)
 			}
 			return middleware.Chain(ms...)(handler)(ctx, req)
