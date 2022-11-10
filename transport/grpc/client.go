@@ -119,7 +119,7 @@ func DialInsecure(ctx context.Context, opts ...ClientOption) (*grpc.ClientConn, 
 
 func dial(ctx context.Context, insecure bool, opts ...ClientOption) (*grpc.ClientConn, error) {
 	options := clientOptions{
-		timeout:      2000 * time.Millisecond,
+		timeout:      3000 * time.Millisecond,
 		balancerName: balancerName,
 	}
 	for _, o := range opts {

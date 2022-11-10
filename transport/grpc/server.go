@@ -127,7 +127,7 @@ func NewServer(opts ...ServerOption) *Server {
 		baseCtx:    context.Background(),
 		network:    "tcp",
 		address:    ":0",
-		timeout:    1 * time.Second,
+		timeout:    2 * time.Second,
 		health:     health.NewServer(),
 		middleware: matcher.New(),
 	}

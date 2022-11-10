@@ -138,7 +138,7 @@ func NewServer(opts ...ServerOption) *Server {
 	srv := &Server{
 		network:     "tcp",
 		address:     ":0",
-		timeout:     1 * time.Second,
+		timeout:     2 * time.Second,
 		middleware:  matcher.New(),
 		dec:         DefaultRequestDecoder,
 		enc:         DefaultResponseEncoder,
