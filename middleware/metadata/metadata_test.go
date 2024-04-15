@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/go-kirito/pkg/metadata"
-	"github.com/go-kirito/pkg/transport"
+	"github.com/go-warrior/pkg/metadata"
+	"github.com/go-warrior/pkg/transport"
 )
 
 type headerCarrier http.Header

@@ -8,7 +8,7 @@ package zlog
 import (
 	log2 "log"
 
-	"github.com/go-kirito/pkg/zlog/zap"
+	"github.com/go-warrior/pkg/zlog/zap"
 )
 
 type Logger interface {

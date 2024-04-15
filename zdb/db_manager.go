@@ -6,9 +6,9 @@
 package zdb
 
 import (
-	"github.com/go-kirito/pkg/zlog"
+	"github.com/go-warrior/pkg/zlog"
 
-	"github.com/go-kirito/pkg/zconfig"
+	"github.com/go-warrior/pkg/zconfig"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

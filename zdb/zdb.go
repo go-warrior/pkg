@@ -12,7 +12,7 @@ import (
 
 	"gorm.io/gorm/clause"
 
-	"github.com/go-kirito/pkg/zlog"
+	"github.com/go-warrior/pkg/zlog"
 
 	"gorm.io/gorm"
 )

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-kirito/pkg/encoding"
+	"github.com/go-warrior/pkg/encoding"
 	"github.com/stretchr/testify/assert"
 )
 

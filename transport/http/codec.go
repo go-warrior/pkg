@@ -5,9 +5,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/go-kirito/pkg/encoding"
-	"github.com/go-kirito/pkg/errors"
-	"github.com/go-kirito/pkg/internal/httputil"
+	"github.com/go-warrior/pkg/encoding"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/internal/httputil"
 )
 
 // SupportPackageIsVersion1 These constants should not be referenced from any other code.
@@ -28,7 +28,7 @@ func DefaultRequestDecoder(r *http.Request, v interface{}) error {
 	if !ok {
 		return errors.BadRequest("CODEC", r.Header.Get("Content-Type"))
 	}
-	
+
 	data, err := io.ReadAll(r.Body)
 
 	// reset body.

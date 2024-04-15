@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 
 	"github.com/fsnotify/fsnotify"
-	"github.com/go-kirito/pkg/zconfig/config"
+	"github.com/go-warrior/pkg/zconfig/config"
 )
 
 type watcher struct {

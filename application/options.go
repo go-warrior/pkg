@@ -5,11 +5,11 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/go-kirito/pkg/registry"
-	"github.com/go-kirito/pkg/transport"
-	"github.com/go-kirito/pkg/transport/grpc"
-	"github.com/go-kirito/pkg/transport/http"
-	"github.com/go-kirito/pkg/zlog"
+	"github.com/go-warrior/pkg/registry"
+	"github.com/go-warrior/pkg/transport"
+	"github.com/go-warrior/pkg/transport/grpc"
+	"github.com/go-warrior/pkg/transport/http"
+	"github.com/go-warrior/pkg/zlog"
 )
 
 // Option is an application option.

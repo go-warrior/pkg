@@ -6,13 +6,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-kirito/pkg/log"
+	"github.com/go-warrior/pkg/log"
 
 	// init encoding
-	_ "github.com/go-kirito/pkg/encoding/json"
-	_ "github.com/go-kirito/pkg/encoding/proto"
-	_ "github.com/go-kirito/pkg/encoding/xml"
-	_ "github.com/go-kirito/pkg/encoding/yaml"
+	_ "github.com/go-warrior/pkg/encoding/json"
+	_ "github.com/go-warrior/pkg/encoding/proto"
+	_ "github.com/go-warrior/pkg/encoding/xml"
+	_ "github.com/go-warrior/pkg/encoding/yaml"
 )
 
 var (

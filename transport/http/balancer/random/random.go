@@ -6,8 +6,8 @@ import (
 	"math/rand"
 	"sync"
 
-	"github.com/go-kirito/pkg/registry"
-	"github.com/go-kirito/pkg/transport/http/balancer"
+	"github.com/go-warrior/pkg/registry"
+	"github.com/go-warrior/pkg/transport/http/balancer"
 )
 
 var _ balancer.Balancer = &Balancer{}

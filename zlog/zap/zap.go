@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/go-kirito/pkg/zlog/writer"
+	"github.com/go-warrior/pkg/zlog/writer"
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"

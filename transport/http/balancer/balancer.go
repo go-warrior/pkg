@@ -3,7 +3,7 @@ package balancer
 import (
 	"context"
 
-	"github.com/go-kirito/pkg/registry"
+	"github.com/go-warrior/pkg/registry"
 )
 
 // DoneInfo is callback when rpc done

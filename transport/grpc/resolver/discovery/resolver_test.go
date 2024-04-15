@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kirito/pkg/log"
-	"github.com/go-kirito/pkg/registry"
+	"github.com/go-warrior/pkg/log"
+	"github.com/go-warrior/pkg/registry"
 	"google.golang.org/grpc/resolver"
 )
 

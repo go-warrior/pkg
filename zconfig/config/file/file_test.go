@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kirito/pkg/zconfig/config"
+	"github.com/go-warrior/pkg/zconfig/config"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -68,14 +68,14 @@ const (
 	}
 }`
 
-//	_testYaml = `
-//Foo:
-//    bar :
-//        - {name: nihao,age: 1}
-//        - {name: nihao,age: 1}
-//
-//
-//`
+	//	_testYaml = `
+	//Foo:
+	//    bar :
+	//        - {name: nihao,age: 1}
+	//        - {name: nihao,age: 1}
+	//
+	//
+	//`
 )
 
 //func TestScan(t *testing.T) {

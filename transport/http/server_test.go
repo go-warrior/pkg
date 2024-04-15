@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kirito/pkg/errors"
+	"github.com/go-warrior/pkg/errors"
 
-	"github.com/go-kirito/pkg/internal/host"
+	"github.com/go-warrior/pkg/internal/host"
 	"github.com/stretchr/testify/assert"
 )
 

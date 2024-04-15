@@ -1,7 +1,7 @@
 package grpc
 
 import (
-	"github.com/go-kirito/pkg/transport"
+	"github.com/go-warrior/pkg/transport"
 	"google.golang.org/grpc/metadata"
 )
 

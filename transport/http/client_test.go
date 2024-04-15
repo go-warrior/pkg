@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kirito/pkg/errors"
+	"github.com/go-warrior/pkg/errors"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/go-kirito/pkg/registry"
+	"github.com/go-warrior/pkg/registry"
 )
 
 type mockRoundTripper struct {

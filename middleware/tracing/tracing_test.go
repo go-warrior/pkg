@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/go-kirito/pkg/transport"
+	"github.com/go-warrior/pkg/transport"
 	"go.opentelemetry.io/otel/propagation"
 	tracesdk "go.opentelemetry.io/otel/sdk/trace"
 	"go.opentelemetry.io/otel/trace"

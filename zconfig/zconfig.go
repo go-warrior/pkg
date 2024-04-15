@@ -9,7 +9,7 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/go-kirito/pkg/util/crypt"
+	"github.com/go-warrior/pkg/util/crypt"
 	"io/ioutil"
 	"log"
 	"os"

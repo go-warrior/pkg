@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/go-kirito/pkg/middleware"
-	"github.com/go-kirito/pkg/registry"
-	"github.com/go-kirito/pkg/transport"
-	"github.com/go-kirito/pkg/transport/grpc/resolver/discovery"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/registry"
+	"github.com/go-warrior/pkg/transport"
+	"github.com/go-warrior/pkg/transport/grpc/resolver/discovery"
 
 	// init resolver
-	_ "github.com/go-kirito/pkg/transport/grpc/resolver/direct"
+	_ "github.com/go-warrior/pkg/transport/grpc/resolver/direct"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/balancer/roundrobin"

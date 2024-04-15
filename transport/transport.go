@@ -5,11 +5,11 @@ import (
 	"net/url"
 
 	// init encoding
-	_ "github.com/go-kirito/pkg/encoding/form"
-	_ "github.com/go-kirito/pkg/encoding/json"
-	_ "github.com/go-kirito/pkg/encoding/proto"
-	_ "github.com/go-kirito/pkg/encoding/xml"
-	_ "github.com/go-kirito/pkg/encoding/yaml"
+	_ "github.com/go-warrior/pkg/encoding/form"
+	_ "github.com/go-warrior/pkg/encoding/json"
+	_ "github.com/go-warrior/pkg/encoding/proto"
+	_ "github.com/go-warrior/pkg/encoding/xml"
+	_ "github.com/go-warrior/pkg/encoding/yaml"
 )
 
 // Server is transport server.

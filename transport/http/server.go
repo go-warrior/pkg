@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-kirito/pkg/internal/host"
-	"github.com/go-kirito/pkg/middleware"
-	"github.com/go-kirito/pkg/transport"
-	"github.com/go-kirito/pkg/zlog"
+	"github.com/go-warrior/pkg/internal/host"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
+	"github.com/go-warrior/pkg/zlog"
 
 	"github.com/gorilla/mux"
 )

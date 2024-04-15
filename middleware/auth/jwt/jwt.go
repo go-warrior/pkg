@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/go-kirito/pkg/metadata"
+	"github.com/go-warrior/pkg/metadata"
 
 	"github.com/golang-jwt/jwt/v4"
 
-	"github.com/go-kirito/pkg/errors"
-	"github.com/go-kirito/pkg/middleware"
-	"github.com/go-kirito/pkg/transport"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
 )
 
 type authKey struct{}

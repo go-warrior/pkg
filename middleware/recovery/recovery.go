@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/go-kirito/pkg/errors"
-	"github.com/go-kirito/pkg/log"
-	"github.com/go-kirito/pkg/middleware"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/log"
+	"github.com/go-warrior/pkg/middleware"
 )
 
 // HandlerFunc is recovery handler func.

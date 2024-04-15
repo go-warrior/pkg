@@ -3,8 +3,8 @@ package form
 import (
 	"testing"
 
-	"github.com/go-kirito/pkg/encoding"
-	"github.com/go-kirito/pkg/internal/testproto/complex"
+	"github.com/go-warrior/pkg/encoding"
+	"github.com/go-warrior/pkg/internal/testproto/complex"
 	"github.com/stretchr/testify/require"
 )
 

@@ -7,8 +7,8 @@ package echo
 import (
 	context "context"
 
-	http "github.com/go-kirito/pkg/transport/http"
-	binding "github.com/go-kirito/pkg/transport/http/binding"
+	http "github.com/go-warrior/pkg/transport/http"
+	binding "github.com/go-warrior/pkg/transport/http/binding"
 )
 
 // This is a compile-time assertion to ensure that this generated file

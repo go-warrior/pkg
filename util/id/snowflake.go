@@ -8,7 +8,7 @@ package id
 import (
 	"os"
 
-	"github.com/go-kirito/pkg/zlog"
+	"github.com/go-warrior/pkg/zlog"
 
 	"github.com/bwmarrin/snowflake"
 )

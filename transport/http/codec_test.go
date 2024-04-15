@@ -6,7 +6,7 @@ import (
 	nethttp "net/http"
 	"testing"
 
-	"github.com/go-kirito/pkg/errors"
+	"github.com/go-warrior/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )
 

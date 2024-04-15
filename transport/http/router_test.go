@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kirito/pkg/internal/host"
+	"github.com/go-warrior/pkg/internal/host"
 )
 
 type User struct {

@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kirito/pkg/transport/grpc"
-	"github.com/go-kirito/pkg/transport/http"
+	"github.com/go-warrior/pkg/transport/grpc"
+	"github.com/go-warrior/pkg/transport/http"
 )
 
 func TestApp(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/go-kirito/pkg/transport"
+	"github.com/go-warrior/pkg/transport"
 )
 
 var (

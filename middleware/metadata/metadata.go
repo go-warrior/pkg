@@ -4,9 +4,9 @@ import (
 	"context"
 	"strings"
 
-	"github.com/go-kirito/pkg/metadata"
-	"github.com/go-kirito/pkg/middleware"
-	"github.com/go-kirito/pkg/transport"
+	"github.com/go-warrior/pkg/metadata"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
 )
 
 // Option is metadata option.

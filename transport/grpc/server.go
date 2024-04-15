@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
-	apimd "github.com/go-kirito/pkg/api/metadata"
-	ic "github.com/go-kirito/pkg/internal/context"
-	"github.com/go-kirito/pkg/internal/host"
-	"github.com/go-kirito/pkg/middleware"
-	"github.com/go-kirito/pkg/transport"
-	"github.com/go-kirito/pkg/zlog"
+	apimd "github.com/go-warrior/pkg/api/metadata"
+	ic "github.com/go-warrior/pkg/internal/context"
+	"github.com/go-warrior/pkg/internal/host"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
+	"github.com/go-warrior/pkg/zlog"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/health"
@@ -130,7 +130,8 @@ func NewServer(opts ...ServerOption) *Server {
 
 // Endpoint return a real address to registry endpoint.
 // examples:
-//   grpc://127.0.0.1:9000?isSecure=false
+//
+//	grpc://127.0.0.1:9000?isSecure=false
 func (s *Server) Endpoint() (*url.URL, error) {
 	s.once.Do(func() {
 		lis, err := net.Listen(s.network, s.address)

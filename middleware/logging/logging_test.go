@@ -6,9 +6,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/go-kirito/pkg/log"
-	"github.com/go-kirito/pkg/middleware"
-	"github.com/go-kirito/pkg/transport"
+	"github.com/go-warrior/pkg/log"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
 )
 
 var (

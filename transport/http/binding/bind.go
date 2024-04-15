@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/go-kirito/pkg/encoding"
-	"github.com/go-kirito/pkg/encoding/form"
+	"github.com/go-warrior/pkg/encoding"
+	"github.com/go-warrior/pkg/encoding/form"
 )
 
 // BindQuery bind vars parameters to target.

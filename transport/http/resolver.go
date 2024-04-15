@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"sync"
 
-	"github.com/go-kirito/pkg/log"
-	"github.com/go-kirito/pkg/registry"
+	"github.com/go-warrior/pkg/log"
+	"github.com/go-warrior/pkg/registry"
 )
 
 // Updater is resolver nodes updater

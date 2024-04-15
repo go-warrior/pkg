@@ -1,4 +1,4 @@
-module github.com/go-kirito/pkg
+module github.com/go-warrior/pkg
 
 go 1.19
 

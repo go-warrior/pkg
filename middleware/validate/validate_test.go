@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-kirito/pkg/errors"
-	"github.com/go-kirito/pkg/middleware"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/middleware"
 )
 
 // protoVali implement validate.validator

@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/go-kirito/pkg/middleware"
-	"github.com/go-kirito/pkg/transport/http/binding"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport/http/binding"
 	"github.com/gorilla/mux"
 )
 

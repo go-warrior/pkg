@@ -10,7 +10,7 @@ import (
 	"database/sql"
 	"sync"
 
-	"github.com/go-kirito/pkg/util/id"
+	"github.com/go-warrior/pkg/util/id"
 )
 
 type txManager struct {

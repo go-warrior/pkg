@@ -10,10 +10,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-kirito/pkg/zcache/redis"
+	"github.com/go-warrior/pkg/zcache/redis"
 
-	"github.com/go-kirito/pkg/zconfig"
-	"github.com/go-kirito/pkg/zlog"
+	"github.com/go-warrior/pkg/zconfig"
+	"github.com/go-warrior/pkg/zlog"
 )
 
 type ICache interface {

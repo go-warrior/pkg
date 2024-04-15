@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kirito/pkg/encoding"
-	"github.com/go-kirito/pkg/metadata"
-	mmd "github.com/go-kirito/pkg/middleware/metadata"
-	"github.com/go-kirito/pkg/transport"
-	"github.com/go-kirito/pkg/transport/grpc"
-	"github.com/go-kirito/pkg/transport/http"
+	"github.com/go-warrior/pkg/encoding"
+	"github.com/go-warrior/pkg/metadata"
+	mmd "github.com/go-warrior/pkg/middleware/metadata"
+	"github.com/go-warrior/pkg/transport"
+	"github.com/go-warrior/pkg/transport/grpc"
+	"github.com/go-warrior/pkg/transport/http"
 
 	stdgrpc "google.golang.org/grpc"
 	grpcmd "google.golang.org/grpc/metadata"

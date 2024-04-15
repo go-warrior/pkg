@@ -10,9 +10,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/go-kirito/pkg/zconfig"
-	"github.com/go-kirito/pkg/zlog"
 	"github.com/go-redis/redis/v8"
+	"github.com/go-warrior/pkg/zconfig"
+	"github.com/go-warrior/pkg/zlog"
 )
 
 type Options struct {

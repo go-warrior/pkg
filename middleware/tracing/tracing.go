@@ -3,8 +3,8 @@ package tracing
 import (
 	"context"
 
-	"github.com/go-kirito/pkg/middleware"
-	"github.com/go-kirito/pkg/transport"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/transport"
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"
 )

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/go-kirito/pkg/internal/httputil"
+	"github.com/go-warrior/pkg/internal/httputil"
 	"google.golang.org/genproto/googleapis/rpc/errdetails"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"

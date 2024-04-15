@@ -5,7 +5,7 @@
  */
 package zlog
 
-import "github.com/go-kirito/pkg/zconfig"
+import "github.com/go-warrior/pkg/zconfig"
 
 type options struct {
 	Driver          string

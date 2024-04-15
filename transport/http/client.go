@@ -9,15 +9,15 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-kirito/pkg/encoding"
-	"github.com/go-kirito/pkg/errors"
-	"github.com/go-kirito/pkg/internal/host"
-	"github.com/go-kirito/pkg/internal/httputil"
-	"github.com/go-kirito/pkg/middleware"
-	"github.com/go-kirito/pkg/registry"
-	"github.com/go-kirito/pkg/transport"
-	"github.com/go-kirito/pkg/transport/http/balancer"
-	"github.com/go-kirito/pkg/transport/http/balancer/random"
+	"github.com/go-warrior/pkg/encoding"
+	"github.com/go-warrior/pkg/errors"
+	"github.com/go-warrior/pkg/internal/host"
+	"github.com/go-warrior/pkg/internal/httputil"
+	"github.com/go-warrior/pkg/middleware"
+	"github.com/go-warrior/pkg/registry"
+	"github.com/go-warrior/pkg/transport"
+	"github.com/go-warrior/pkg/transport/http/balancer"
+	"github.com/go-warrior/pkg/transport/http/balancer/random"
 )
 
 // DecodeErrorFunc is decode error func.
